@@ -11,6 +11,6 @@ postgres_library: python3-psycopg2
 # postgres_10_bin_path: /usr/pgsql-10/bin
 postgres_10_data_dir: /var/lib/pgsql/data/
 postgres_10_bin_path: /usr/bin
-postgres_service: postgresql-10.service
+postgres_service: postgresql.service
 postgres_port: 5432
 postgres_user: postgres
