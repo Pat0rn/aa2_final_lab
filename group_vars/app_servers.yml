@@ -27,5 +27,5 @@ pip_dependencies:
 
 
 postgres_rhel7_repo: "https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm"
-postgres_library: python-psycopg2
+postgres_library: python3-psycopg2
 
