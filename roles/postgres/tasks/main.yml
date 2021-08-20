@@ -1,8 +1,9 @@
 ---
 - name: Install Postgres packages
-  package:
+  dnf:
     name: "{{ __package }}"
     state: present
+    disable_gpg_check: yes
   loop: 
     - "{{ postgres_rhel7_repo }}"        
     - "{{ postgres_packages }}"
