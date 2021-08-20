@@ -33,15 +33,3 @@
         username: "admin"
         password: "r3dh4t1!"
         auto_attach: true
-
-- name: Setup Repos
-  hosts: app_servers:load_balancers:database_servers
-  gather_facts: false
-  become: true
-  tags:
-    - common
-  tasks:
-    - name: Copy repo file
-      copy:
-        src: ../files/open_three-tier-app.repo
-        dest: /etc/yum.repos.d/open_three-tier-app.repo
