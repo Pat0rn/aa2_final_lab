@@ -10,7 +10,7 @@ openstack_servers:
     security_group_name: "{{GUID}}-HostSG"
     image: "{{ _server_image | default('rhel-8.3') }}"
     openstack_cloud: "{{GUID}}-project"
-    flavor: GLOBAL-CPU_4_Memory_32768_Disk_60_flavor
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
     key_name: "{{GUID}}-keypair"
     network: "{{GUID}}-dev-network"
   - instance_name: app2
@@ -19,7 +19,7 @@ openstack_servers:
     security_group_name: "{{GUID}}-HostSG"
     image: "{{ _server_image | default('rhel-8.3') }}"
     openstack_cloud: "{{GUID}}-project"
-    flavor: GLOBAL-CPU_4_Memory_32768_Disk_60_flavor
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
     key_name: "{{GUID}}-keypair"
     network: "{{GUID}}-dev-network"
   - instance_name: appdb1
@@ -28,7 +28,7 @@ openstack_servers:
     security_group_name: "{{GUID}}-HostSG"
     image: "{{ _server_image | default('rhel-8.3') }}"
     openstack_cloud: "{{GUID}}-project"
-    flavor: GLOBAL-CPU_4_Memory_32768_Disk_60_flavor
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
     key_name: "{{GUID}}-keypair"
     network: "{{GUID}}-dev-network"
   - instance_name: frontend1
@@ -37,6 +37,6 @@ openstack_servers:
     security_group_name: "{{GUID}}-HostSG"
     image: "{{ _server_image | default('rhel-8.3') }}"
     openstack_cloud: "{{GUID}}-project"
-    flavor: GLOBAL-CPU_4_Memory_32768_Disk_60_flavor
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
     key_name: "{{GUID}}-keypair"
     network: "{{GUID}}-dev-network"
