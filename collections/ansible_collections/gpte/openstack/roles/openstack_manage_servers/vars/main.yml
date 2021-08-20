@@ -10,12 +10,12 @@ openstack_instances:
     deployment: dev
     security_group_name: apps
 
-  - instance_name: db
+  - instance_name: appdb1
     group: appdbs
     deployment: dev
     security_group_name: db
 
-  - instance_name: frontend
+  - instance_name: frontend1
     group: frontends
     deployment: dev
     security_group_name: frontend
