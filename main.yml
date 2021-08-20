@@ -281,7 +281,8 @@
       uri:
         url: "http://frontend1/ping"
         return_content: yes
-      until: '"alive" in result.content'
+      # until: '"alive" in result.content'
+      until: _result.status == 200
       retries: 10
       delay: 1
       register: result
