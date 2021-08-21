@@ -27,7 +27,7 @@
         - smoketest
 
 - name: End to end smoke tests
-  hosts: app_servers
+  hosts: app_servers:load_balancers
   become: false
   gather_facts: false
   tags:
