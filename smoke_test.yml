@@ -27,7 +27,7 @@
         - smoketest
 
 - name: End to end smoke tests
-  hosts: app_servers
+  hosts: app_servers:load_balancers
   become: false
   gather_facts: false
   tags:
@@ -42,6 +42,6 @@
       retries: 10
       delay: 1
       register: result
-      # delegate_to: localhost
+      delegate_to: localhost
 
 ...
