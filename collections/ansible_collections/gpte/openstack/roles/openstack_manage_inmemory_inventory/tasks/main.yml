@@ -38,7 +38,7 @@
           loop_var: __instance
 
     - name: DNS pod record update
-      become: true
+      # become: true
       when: dns_record_update | default(true) | bool
       block:
 
