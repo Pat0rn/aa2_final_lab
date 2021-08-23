@@ -48,7 +48,7 @@
             dest: "{{ dns_zone_file | default('/opt/podman/volumes/bind9-volume/var/named/example.com.zone') }}"
 
         - name: restart_dns_pod
-          command: podman restart bind9-dns
+          command: podman restart bind9
 
       
   tags:
